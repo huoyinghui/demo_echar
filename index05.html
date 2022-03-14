@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>ECharts</title>
+	<!-- 引入刚刚下载的 ECharts 文件 -->
+	<script src="echarts.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/dist/echarts.min.js"></script> -->
+</head>
+
+<body>
+	<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+	<div id="main" style="width: 600px;height:400px;"></div>
+	<script type="text/javascript">
+		// 基于准备好的dom，初始化echarts实例
+		var chartDom = document.getElementById('main');
+		var myChart = echarts.init(chartDom, 'dark');
+		var option;
+
+		var option1 = {
+			dataset: {
+				dimensions: [
+					{ name: 'score' },
+					// 可以简写为 string ，表示 dimension name 。
+					'amount',
+					// 可以在 type 中指定维度类型。
+					{ name: 'product', type: 'ordinal' }
+				],
+				source: [
+					//...
+				]
+			}
+			// ...
+		};
+
+		var option2 = {
+			dataset: {
+				source: [
+					// ...
+				]
+			},
+			series: {
+				type: 'line',
+				// series.dimensions 会更优先于 dataset.dimension 采纳。
+				dimensions: [
+					null, // 可以设置为 null 表示不想设置维度名
+					'amount',
+					{ name: 'product', type: 'ordinal' }
+				]
+			}
+			// ...
+		};
+		myChart.setOption(option);
+
+	</script>
+</body>
+
+</html>
