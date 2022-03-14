@@ -1,0 +1,40 @@
+.DS_Store
+*.swp
+*.pyc
+*.pyo
+*.mo
+*.xml
+*adminx.py
+.coverage
+package/
+*.pid
+
+# 数据库文件
+dump.rdb
+*.sqlite3
+
+# 工具相关
+.vscode/
+.idea/*
+*/.idea/*
+*/__pycache__/*
+
+.fabfile.py
+fabfile.py
+Dockerfile
+
+# 虚拟环境
+env/
+venv/
+static/
+fab
+.env/
+.nox/
+
+# 日志相关
+*.log
+logs/*.log
+logs/nohup.*
+
+# 
+package
