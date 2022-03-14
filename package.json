@@ -1,0 +1,19 @@
+{
+  "name": "demo_echars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "echarts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huoyinghui/demo_echar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huoyinghui/demo_echar/issues"
+  },
+  "homepage": "https://github.com/huoyinghui/demo_echar#readme"
+}
