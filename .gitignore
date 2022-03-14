@@ -38,3 +38,4 @@ logs/nohup.*
 
 # 
 package
+**/node_modules/
